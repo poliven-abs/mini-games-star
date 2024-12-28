@@ -30,6 +30,10 @@ body {
             right: 0;
             top: 0;
         }
+        &-mob {
+            display: none;
+        }
+
         &-1 {
             left: 63px;
             top: 94px;
@@ -119,6 +123,7 @@ body {
         justify-content: center;
         column-gap: 32px;
     }
+
     &__block {
         display: flex;
         row-gap: 32px;
@@ -127,6 +132,11 @@ body {
             display: none;
         }
     }
+    &__link {
+        display: block;
+        text-decoration: none;
+    }
+
     &__icon {
         background-color: #fff;
         border-radius: 30px;
@@ -138,6 +148,16 @@ body {
             height: 512px;
         }
         &_3 {
+
+            height: 473px;
+        }
+        &_4 {
+            height: 551px;
+        }
+        &_5 {
+            height: 512px;
+        }
+        &_6 {
             height: 551px;
         }
         &:hover {
@@ -153,6 +173,7 @@ body {
     &-text {
         width: 314px;
         padding: 32px 32px 36px 32px;
+        text-decoration: none;
         &__number {
             color: #202027;
             font-size: 16px;
@@ -167,6 +188,33 @@ body {
             line-height: 39px;
         }
     }
+
+    &-mob__text {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &-mob__button {
+        margin-top: 32px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        width: 285px;
+        height: 55px;
+        box-sizing: border-box;
+        border: 1px solid #202027;
+        border-radius: 60px;
+        background: #202027;
+        transition: all 0.3s;
+        &:hover {
+            color: #202027;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+    }
+
     &__star {
         position: absolute;
         &-big {
@@ -185,3 +233,6 @@ body {
     }
 
 }
+
+@import 'mobile'
+
