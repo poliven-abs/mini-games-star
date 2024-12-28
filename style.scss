@@ -33,6 +33,7 @@ body {
         &-mob {
             display: none;
         }
+
         &-1 {
             left: 63px;
             top: 94px;
@@ -131,11 +132,11 @@ body {
             display: none;
         }
     }
-    
     &__link {
         display: block;
         text-decoration: none;
     }
+
     &__icon {
         background-color: #fff;
         border-radius: 30px;
@@ -147,6 +148,7 @@ body {
             height: 512px;
         }
         &_3 {
+
             height: 473px;
         }
         &_4 {
@@ -186,6 +188,7 @@ body {
             line-height: 39px;
         }
     }
+
     &-mob__text {
         color: #000;
         font-size: 16px;
@@ -211,6 +214,7 @@ body {
             border: 1px solid #000;
         }
     }
+
     &__star {
         position: absolute;
         &-big {
@@ -230,4 +234,5 @@ body {
 
 }
 
-@import 'mobile.scss'
+@import 'mobile'
+
