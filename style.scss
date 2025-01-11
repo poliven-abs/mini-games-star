@@ -51,22 +51,22 @@ body {
             bottom: 146px;
         }
     }
-}
-.content {
-    &__title {
-        color: #202027;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        padding-bottom: 24px;
+    &-headline {
+        &__title {
+            color: #202027;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            padding-bottom: 24px;
+        }
+        &__text {
+            color: #202027;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+        }
     }
-    &__text {
-        color: #202027;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-    }
-    &__button {
+    &-button {
         color: #fff;
         font-size: 24px;
         font-weight: 600;
@@ -85,6 +85,7 @@ body {
         }
     }
 }
+
 .games {
     background-color: #202027;
     box-sizing: border-box;
@@ -207,32 +208,6 @@ body {
             line-height: 39px;
         }
     }
-
-    &-mob__text {
-        color: #000;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-    }
-    &-mob__button {
-        margin-top: 32px;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 141.69%;
-        width: 285px;
-        height: 55px;
-        box-sizing: border-box;
-        border: 1px solid #202027;
-        border-radius: 60px;
-        background: #202027;
-        transition: all 0.3s;
-        &:hover {
-            color: #202027;
-            background-color: #fff;
-            border: 1px solid #000;
-        }
-    }
 }
 
 .short {
@@ -264,8 +239,8 @@ body {
         }
     }
     &-title {
-        margin-top: 46px;
-        margin-bottom: 72px;
+        padding-top: 46px;
+        padding-bottom: 72px;
         &__text {
             color: #fff;
             font-size: 64px;

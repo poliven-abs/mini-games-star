@@ -25,7 +25,7 @@ if (c1 > 0 && c1 < 10) {
 } else {
     console.log('Неверно');
 }
-let c2 = 0-3;
+let c2 = 0 - 3;
 if (c2 > 0 && c2 < 10) {
     console.log('Верно');
 
