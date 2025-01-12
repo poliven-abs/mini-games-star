@@ -46,21 +46,21 @@
                 bottom: 79px;
             }
         }
-    }
-    .content {
-        &__title {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 49px;
-            text-align: center;
+        &-headline {
+            &__title {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 49px;
+                text-align: center;
+            }
+            &__text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+            }
         }
-        &__text {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 20px;
-            text-align: center;
-        }
-        &__button {
+        &-button {
             font-size: 16px;
             font-weight: 600;
             line-height: 141.69%;
@@ -68,65 +68,75 @@
             height: 55px;
         }
     }
+
     .games {
+        display: none;
+    }
+
+    .short {
         height: 3740px;
         display: flex;
-        justify-content: center;        
-        &-description {
-            display: none;
-        }
-        &-mini {
-            display: block;
-            &__title {
+        justify-content: center; 
+        &-title {
+            padding-top: 48px;
+            padding-bottom: 40px;
+            &__text {
                 width: 250px;
                 color: #fff;
                 font-size: 40px;
                 font-weight: 700;
                 line-height: 49px;
-                padding-top: 48px;
-                padding-bottom: 48px;
             }
         }
-        &__block {
-            display: none;
-        }
-        &__block-mob {
+        &-info {
             display: flex;
             flex-direction: column;  
             flex-wrap: wrap;
-            row-gap: 24px;          
+            row-gap: 24px;  
+        }
+        &__icon {
+            height: auto;
+            width: 343px;
+            &_1 {
+                flex-direction: column;
+
+            }
+            &_2 {
+                flex-direction: column;
+            }
         }
         &-text {
             width: 284.93px;
             padding: 29.04px 29.04px 32.67px 29.04px;
             &__name {
+                font-size: 32px;
+                line-height: 39px;
                 padding-bottom: 16px;
             }
-        }
-        &__icon {
-            height: auto;
-            width: 343px;
-            transition: all 0s;
-            &_1 {
-                height: 528.63px;
+            &__text {
+                color: #000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
             }
-            &_2 {
-                height: 567.63px;
-            }
-            &_3 {
-                height: 567.63px;
-            }
-            &_4 {
-                height: 606.63px;
-            }
-            &_5 {
-                height: 528.63px;
-            }
-            &_6 {
-                height: 626.63px;
-            }
-            &:hover {
-                transform: scale(1);
+            &__button {
+                margin-top: 32px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 141.69%;
+                width: 285px;
+                height: 55px;
+                box-sizing: border-box;
+                border: 1px solid #202027;
+                border-radius: 60px;
+                background: #202027;
+                transition: all 0.3s;
+                &:hover {
+                    color: #202027;
+                    background-color: #fff;
+                    border: 1px solid #000;
+                }
             }
         }
         &__img {
@@ -137,6 +147,29 @@
             display: none;
         }
     }
-
-    
+    #game-1 {
+        height: 528.63px;
+    }
+    #game-2 {
+        height: 567.63px;
+    }
+    #game-3 {
+        height: 567.63px;
+    }
+    #game-4 {
+        height: 606.63px;
+    }
+    #game-5 {
+        height: 528.63px;
+    }
+    #game-6 {
+        height: 626.63px;
+    }
+    .footer {
+    height: 100px;
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 }
