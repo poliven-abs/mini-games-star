@@ -59,6 +59,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   padding-bottom: 24px;
+  max-width: 768px;
 }
 .top-headline__text {
   color: #202027;
@@ -395,7 +396,7 @@ body {
   }
   .short-title {
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
   }
   .short-title__text {
     width: 250px;
