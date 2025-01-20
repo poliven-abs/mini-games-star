@@ -6,21 +6,20 @@ function smallerNumber(a, b) {
         return a;
     }
 }
-
-smallerNumber(5, 8);
-smallerNumber(10, 8);
+console.log(smallerNumber(5, 8));
+console.log(smallerNumber(10, 8));
 
 //task2//
 function parityNumber(p) {
-    if (p % 2 == 0) {
-        return console.log('Число чётное');
-    } else if (p % 2 !== 0) {
-        return console.log('Число нечётное');
+    let numP = p % 2;
+    if (numP == 0) {
+        return numP = 'Число чётное';
+    } else {
+        return numP = 'Число нечётное';
     }
 }
-
-parityNumber(5);
-parityNumber(10);
+console.log(parityNumber(5));
+console.log(parityNumber(10));
 
 //task3//
 function squareOne(x) {
@@ -29,21 +28,21 @@ function squareOne(x) {
 squareOne(5);
 
 function squareTwo(y) {
-    return console.log(y ** 2);
+    return y = y ** 2;
 }
+console.log(squareTwo(6));
 
-squareTwo(6);
 
 //task4//
 let age = prompt('Введите свой возраст:');
 
 function ageUser(num) {
     if (num < 0) {
-        return console.log('Вы ввели неправильное значение');
+        console.log('Вы ввели неправильное значение');
     } else if (num >= 0 && num < 12) {
-        return console.log('Привет, друг!');
+        console.log('Привет, друг!');
     } else {
-        return console.log('Добро пожаловать!');
+        console.log('Добро пожаловать!');
     }
 }
 ageUser(age);
@@ -51,8 +50,8 @@ ageUser(age);
 //task5//
 
 function numberCheck(numO, numT) {
-    if (!isNaN(numO) == false && !isNaN(numT) == false) {
-        return console.log('Одно или оба значения не являются числом');
+    if (!isNaN(numO) == false || !isNaN(numT) == false) {
+        console.log('Одно или оба значения не являются числом');
     } else {
         return numO * numT;
     }
