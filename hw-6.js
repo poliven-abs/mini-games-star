@@ -31,6 +31,7 @@ for (let i = 0; i < 3; i++) {
     taskFive.push(2);
 }
 console.log(taskFive);
+
 //task6//
 const taskSix = [9, 8, 7, 'a', 6, 5];
 taskSix.sort();
@@ -53,7 +54,6 @@ console.log(taskEight.split('').reverse().join(''));
 
 //task9//
 const taskNine = [[1, 2, 3], [4, 5, 6]];
-
 const allNine = [...taskNine[0], ...taskNine[1]];
 
 console.log(allNine);
@@ -102,13 +102,10 @@ console.log(newEl);
 //task12//
 const taskTwl = [['кот', 'собака', 'попугай'], ['белый', 'черный', 'зеленый']];
 
-
 const taskTwlT = [...taskTwl[0], ...taskTwl[1]];
 const taskLen = taskTwlT.map(i => i.length);
 
 console.log(taskLen);
-
-
 
 //task13//
 const taskTht = [...Array(5)];
