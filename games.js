@@ -18,3 +18,15 @@ function gameRandom() {
         alert('Молодец, ты угадал!');
     }
 }
+
+function gameArithmetic() {
+    let arrNumber = [];
+        for (let i = 0; i < 101; i++) {
+            arrNumber.push(i);    
+        }
+
+    const ariOperations = ['+', '-', '*', '/'];
+
+    
+    
+}
