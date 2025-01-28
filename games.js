@@ -40,7 +40,9 @@ function gameArithmetic() {
             decision = ariX * ariY;
             break;
         case '/':
-            decision = ariX / ariY;
+            let numCacl = ariX / ariY;
+            const numRounding = (numCacl).toFixed(2); 
+            decision = parseFloat(numRounding);
             break;
         default:
             break;

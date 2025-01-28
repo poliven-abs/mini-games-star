@@ -71,12 +71,9 @@ for (let i = 0; i < taskTen.length; i++) {
 }
 
 const newTen = [];
-for (let i = 0; i < taskTen.length; i++) {
-    if (i < taskTen.length - 1) {
-        newTen[i] = taskTen[i] + taskTen[i + 1];
-    } else {
-        newTen[i] = taskTen[i];
-    }
+
+for (let i = 0; i < taskTen.length - 1; i++) {
+    newTen.push(taskTen[i] + taskTen[i + 1]);
 }
 
 console.log(taskTen);
@@ -100,10 +97,9 @@ console.log(taskEl);
 console.log(newEl);
 
 //task12//
-const taskTwl = [['кот', 'собака', 'попугай'], ['белый', 'черный', 'зеленый']];
+const taskTwl = ['кот', 'собака', 'попугай', 'белый', 'черный', 'зеленый'];
 
-const taskTwlT = [...taskTwl[0], ...taskTwl[1]];
-const taskLen = taskTwlT.map(i => i.length);
+const taskLen = taskTwl.map(i => i.length);
 
 console.log(taskLen);
 
