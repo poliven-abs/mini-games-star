@@ -43,7 +43,7 @@ function numRandon(i, j) {
 let randomSix = [];
 
 function taskSix(i) {
-    let numSix = numRandon (0, i);
+    let numSix = numRandon(0, i);
     randomSix.length = Math.floor(numSix / 2)
 
     for (let j = 0; j < randomSix.length; j++) {
