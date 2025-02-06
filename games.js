@@ -101,38 +101,35 @@ function gameQuiz() {
 }
 
 function gameRSP() {
-
     const arrRSP = ["камень", "ножницы", "бумага"];
     let pcIndex = Math.floor(Math.random() * 3);
-    console.log(pcIndex);
 
     const userOption = prompt('Давай сыграем: камень, ножницы или бумага? Введи свой вариант:');
     let userIndex = arrRSP.indexOf(userOption.toLowerCase());
-    console.log(userIndex);
 
     let wordCheck = arrRSP.includes(userOption.toLowerCase());
-    console.log(wordCheck);
 
     if (wordCheck == false) {
         alert('Некорректно введен ответ');
     } else {
         if (pcIndex === userIndex) {
             alert('Ничья!');
-        }
-        if (pcIndex === 0 && userIndex === 1) {
-            alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
-        } else if (pcIndex === 1 && userIndex === 0) {
-            alert('Ты победил!');
-        }
-        if (pcIndex === 1 && userIndex === 2) {
-            alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
-        } else if (pcIndex === 2 && userIndex === 1) {
-            alert('Ты победил!');
-        }
-        if (pcIndex === 2 && userIndex === 0) {
-            alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
-        } else if (pcIndex === 0 && userIndex === 2) {
-            alert('Ты победил!');
+        } else {
+            if (pcIndex === 0 && userIndex === 1) {
+                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+            } else if (pcIndex === 1 && userIndex === 0) {
+                alert('Ты победил!');
+            }
+            if (pcIndex === 1 && userIndex === 2) {
+                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+            } else if (pcIndex === 2 && userIndex === 1) {
+                alert('Ты победил!');
+            }
+            if (pcIndex === 2 && userIndex === 0) {
+                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+            } else if (pcIndex === 0 && userIndex === 2) {
+                alert('Ты победил!');
+            }
         }
     }
 
