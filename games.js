@@ -113,22 +113,22 @@ function gameRSP() {
         alert('Некорректно введен ответ');
     } else {
         if (pcIndex === userIndex) {
-            alert('Ничья!');
+            alert('Упс! Ничья.');
         } else {
             if (pcIndex === 0 && userIndex === 1) {
-                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
             } else if (pcIndex === 1 && userIndex === 0) {
-                alert('Ты победил!');
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
             }
             if (pcIndex === 1 && userIndex === 2) {
-                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
             } else if (pcIndex === 2 && userIndex === 1) {
-                alert('Ты победил!');
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
             }
             if (pcIndex === 2 && userIndex === 0) {
-                alert(`Победил компьютер с ответом ${arrRSP[pcIndex]}`);
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
             } else if (pcIndex === 0 && userIndex === 2) {
-                alert('Ты победил!');
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
             }
         }
     }
