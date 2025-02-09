@@ -99,3 +99,38 @@ function gameQuiz() {
 
     alert(`Количество ваших правильных ответов: ${correctAnswer}`);
 }
+
+function gameRSP() {
+    const arrRSP = ["камень", "ножницы", "бумага"];
+    let pcIndex = Math.floor(Math.random() * 3);
+
+    const userOption = prompt('Давай сыграем: камень, ножницы или бумага? Введи свой вариант:');
+    let userIndex = arrRSP.indexOf(userOption.toLowerCase());
+
+    let wordCheck = arrRSP.includes(userOption.toLowerCase());
+
+    if (wordCheck == false) {
+        alert('Некорректно введен ответ');
+    } else {
+        if (pcIndex === userIndex) {
+            alert('Упс! Ничья.');
+        } else {
+            if (pcIndex === 0 && userIndex === 1) {
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
+            } else if (pcIndex === 1 && userIndex === 0) {
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
+            }
+            if (pcIndex === 1 && userIndex === 2) {
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
+            } else if (pcIndex === 2 && userIndex === 1) {
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
+            }
+            if (pcIndex === 2 && userIndex === 0) {
+                alert(`Победил компьютер с ответом "${arrRSP[pcIndex]}". А твой вариант был - "${arrRSP[userIndex]}"`);
+            } else if (pcIndex === 0 && userIndex === 2) {
+                alert(`Ты победил с вариантом "${arrRSP[userIndex]}"! А компьютер выбрал "${arrRSP[pcIndex]}".`);
+            }
+        }
+    }
+
+}
