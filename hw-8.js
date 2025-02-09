@@ -12,14 +12,14 @@ console.log(peopleOne.sort((a, b) => a.age - b.age));
 //task2
 function isPositive(number) {
     if (number > 0) {
-        return number;
+        return number > 0;
     } else {
         return false;
     }
 }
 function isMale(people) {
     if (people.gender == 'male') {
-        return people;
+        return people.gender == 'male';
     } else {
         return false;
     }
@@ -27,8 +27,8 @@ function isMale(people) {
 function filter(arr, arrNew) {
     const filterArr = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arrNew(arr[i])  != false) {
-            filterArr.push(arrNew(arr[i]));
+        if (arrNew(arr[i]) != false) {
+            filterArr.push(arr[i]);
         }
     }
     return filterArr;
@@ -38,10 +38,10 @@ function filter(arr, arrNew) {
 console.log(filter([3, -4, 1, 9], isPositive));
 
 const peopleTwo = [
-    {name: 'Глеб', gender: 'male'},
-    {name: 'Анна', gender: 'female'},
-    {name: 'Олег', gender: 'male'},
-    {name: 'Оксана', gender: 'female'}
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
 ];
 
 console.log(filter(peopleTwo, isMale));
