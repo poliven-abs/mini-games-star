@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1-hidden {
+            display: none;
+        }
+        .btn {
+            width: 120px;
+            height: 30px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="h1">Прятки для первого задания</h1>
+        <button id="btn-one" class="btn">Скрыть</button>
+    </div>
+    <div>
+        <p>Меняем текст во втором задании</p>
+        <button id="btn-two" class="btn">Изменить цвет</button>
+    </div>
+    <div>
+        <h1 id="h1">Готов к смене текста в задании №3?</h1>
+        <button id="btn-three" class="btn">Изменить текст</button>
+    </div>
+    <div>
+        <p class="description">И раз</p>
+        <p class="description">И два</p>
+        <p class="description">И три</p>
+    
+        <button id="btn-four" class="btn">Задание № 4</button>
+    </div>
+    <div>
+        <p class="description-none">И четрые</p>
+        <p class="description">И пять</p>
+        <p class="description-none">И шесть</p>
+        <p class="description">И семь</p>
+    
+        <button id="btn-five" class="btn">Задание № 5</button>
+    </div>
+    <div>
+        <div id="task-six"></div>
+        <button id="btn-six" class="btn">Задание № 6</button>
+    </div>
+    <div>
+        <p id="p">Задание семь - пора исчезнуть</p>
+        <button id="btn-seven" class="btn">Задание № 7</button>
+    </div>
+
+    <script>
+        const taskOne = document.querySelector('h1');
+        const btnOne = document.querySelector('#btn-one');
+        btnOne.addEventListener('click', () => {
+            taskOne.classList.toggle('h1-hidden');
+        })
+
+        const taskTwo = document.querySelector('p');
+        const btnTwo = document.querySelector('#btn-two');
+        btnTwo.addEventListener('click', () => {
+            taskTwo.style.color = 'blue';
+        })
+
+        const taskThree = document.querySelector('#h1');   //для наглядности сделано через id к конкретному заголовку
+        const btnThree = document.querySelector('#btn-three');
+        btnThree.addEventListener('click', () => {
+            taskThree.textContent = 'Привет, мир!';
+        })
+
+        const taskFour = document.querySelectorAll('.description');
+        const btnFour = document.querySelector('#btn-four');
+        btnFour.addEventListener('click', () => {
+            taskFour.forEach(el => {
+                el.textContent = 'Измененный текст';
+            })
+        })
+        const taskFive = document.querySelectorAll('.description');
+        const btnFive = document.querySelector('#btn-five');
+        btnFive.addEventListener('click', () => {
+            taskFive.forEach(el => {
+                el.textContent = 'Новый текст';
+            })
+        })
+
+        const taskSix = document.querySelector('body');
+        const btnSix = document.querySelector('#btn-six');
+        btnSix.addEventListener('click', () => {
+            const paragraphSix = document.createElement('p');
+            paragraphSix.textContent = 'Новый абзац';
+            taskSix.appendChild(paragraphSix);
+        })
+
+        const taskSeven = document.querySelector('#p'); //для наглядности сделано через id к конкретному заголовку
+        const btnSeven = document.querySelector('#btn-seven');
+        btnSeven.addEventListener('click', () => {
+            taskSeven.remove();
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
