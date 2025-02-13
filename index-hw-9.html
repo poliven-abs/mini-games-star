@@ -53,6 +53,7 @@
         <button id="btn-six" class="btn">Задание № 6</button>
     </div>
     <div>
+        <p id="p">Задание семь - пора исчезнуть</p>
         <button id="btn-seven" class="btn">Задание № 7</button>
     </div>
 
@@ -92,13 +93,13 @@
 
         const taskSix = document.querySelector('body');
         const btnSix = document.querySelector('#btn-six');
-        const paragraphSix = document.createElement('p');
-        paragraphSix.textContent = 'Новый абзац';
         btnSix.addEventListener('click', () => {
+            const paragraphSix = document.createElement('p');
+            paragraphSix.textContent = 'Новый абзац';
             taskSix.appendChild(paragraphSix);
         })
 
-        const taskSeven = document.querySelector('p');
+        const taskSeven = document.querySelector('#p'); //для наглядности сделано через id к конкретному заголовку
         const btnSeven = document.querySelector('#btn-seven');
         btnSeven.addEventListener('click', () => {
             taskSeven.remove();
