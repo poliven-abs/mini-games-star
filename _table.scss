@@ -1,0 +1,96 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+    .top {
+        &__star {
+            position: absolute;
+            &-big {
+                display: none;
+            }
+            &-mob {
+                display: block;
+                right: 0;
+                top: 0;
+            }
+            &-1 {
+                width: 40px;
+                height: 40px;
+                left: 38px;
+                top: 97px;
+            }
+            &-2 {
+                width: 25px;
+                height: 25px;
+                left: 92px;
+                top: 64px;
+            }
+            &-3 {
+                width: 26px;
+                height: 26px;
+                right: 86px;
+                bottom: 125px;
+            }
+            &-4 {
+                width: 60px;
+                height: 60px;
+                right: 34px;
+                bottom: 79px;
+            }
+        }
+    }
+
+    .games {
+        display: none;
+    }
+
+    .short {
+        &-content {
+            max-width: 800px;
+        }
+        &-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        &__icon {
+            height: auto;
+            width: auto;
+        }
+        &__img {
+            width: 50%;
+        }
+        &-text {
+            width: 50%;
+            &__name {
+                font-size: 40px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+            &__button {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .top {
+        &-headline {
+            width: 750px;
+        }
+    }
+    .short {
+        &-content {
+            max-width: 750px;
+        }
+    }
+
+}

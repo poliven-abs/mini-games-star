@@ -69,6 +69,17 @@
         }
     }
 
+    .tape {
+        height: 51.34px;
+        &__text {
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 27.4px;
+            padding-right: 27.4px;
+            font-size: 16px;
+        }
+    }
+
     .games {
         display: none;
     }
@@ -77,6 +88,7 @@
         height: 3740px;
         display: flex;
         justify-content: center; 
+        align-items: center;
         &-title {
             padding-top: 48px;
             padding-bottom: 48px;

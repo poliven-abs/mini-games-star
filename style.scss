@@ -87,6 +87,63 @@ body {
     }
 }
 
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes scrollDouble {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.tape {
+    max-width: 100%;
+    background-color: #BDED35;
+    overflow-x: hidden;
+    display: flex;
+    height: 90px;
+    &__total {
+        position: relative;
+        background-color: #BDED35;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        white-space: nowrap;
+        animation: scroll 20s linear infinite;
+        animation-delay: -20s;
+    }
+    &-double__total {
+        position: relative;
+        background-color: #BDED35;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        white-space: nowrap;
+        animation: scrollDouble 20s linear infinite;
+        animation-delay: -10s;
+    }
+    &__text {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 51px;
+        padding-right: 51px;
+        color: #202027;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+    }
+}
+
 .games {
     background-color: #202027;
     box-sizing: border-box;
@@ -326,5 +383,7 @@ body {
     }
 }
 
-@import 'mobile'
+@import 'table';
+@import 'mobile';
+
 
