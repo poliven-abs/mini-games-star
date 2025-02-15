@@ -135,3 +135,22 @@ function gameRSP() {
 
 }
 
+function gameColor() {
+    const bgColorGames = document.querySelector('.games');
+    const bgColorShort = document.querySelector('.short');
+    const btnColor = document.querySelector('#btn-color');
+
+    btnColor.addEventListener('click', () => {
+        let colorR = Math.floor(Math.random() * 256);
+        let colorG = Math.floor(Math.random() * 256);
+        let colorB = Math.floor(Math.random() * 256);
+    
+        const rgbToHex = (r, g, b) => `#${[r, g, b].map(x => x.toString(16).padStart(2, '0')).join('')}`;
+        
+        let color = rgbToHex(colorR, colorG, colorB);
+
+        bgColorGames.style.backgroundColor = color;
+        bgColorShort.style.backgroundColor = color;
+
+    })
+}
