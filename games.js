@@ -149,5 +149,4 @@ function gameColor() {
 
     bgColorGames.style.backgroundColor = color;
     bgColorShort.style.backgroundColor = color;
-
 }

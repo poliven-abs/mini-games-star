@@ -201,7 +201,11 @@ body {
             font-size: 16px;
             font-weight: 500;
             line-height: 110%;
-            padding-bottom: 16px;
+            margin-bottom: 16px;
+            padding: 8px 16px 10px 16px;
+            width: fit-content;
+            background-color: #f7f7f7;
+            border-radius: 52.82px;
         }
         &__name {
             color: #202027;
