@@ -132,8 +132,8 @@ function gameRSP() {
             }
         }
     }
-
 }
+
 function gameColor() {
     const bgColorGames = document.querySelector('.games');
     const bgColorShort = document.querySelector('.short');
