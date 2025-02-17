@@ -22,7 +22,8 @@
                     нажимай
                     «Поехали!» и приступай.</p>
             </div>
-            <button class="top-button">Поехали!</button>
+            <button class="top-button"
+                onclick="document.querySelector('.games').scrollIntoView({ behavior: 'smooth'})">Поехали!</button>
         </div>
 
         <img class="top__star top__star-big" src="img/star-top/star-big.svg" alt="star-big">
@@ -37,38 +38,39 @@
         <div class="tape__total">
             <h1 class="tape__text">ВИКТОРИНА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">УГАДАЙ&nbsp;ЧИСЛО</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ПЕРЕВЕРНИ&nbsp;ТЕКСТ</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ПРОСТАЯ&nbsp;АРИФМЕТИКА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">КАМЕНЬ,&nbsp;НОЖНИЦЫ,&nbsp;БУМАГА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ГЕНЕРАТОР&nbsp;СЛУЧАЙНЫХ&nbsp;ЧИСЕЛ</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
         </div>
         <div class="tape-double__total">
+            <!-- повтор для плавности -->
             <h1 class="tape__text">ВИКТОРИНА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">УГАДАЙ&nbsp;ЧИСЛО</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ПЕРЕВЕРНИ&nbsp;ТЕКСТ</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ПРОСТАЯ&nbsp;АРИФМЕТИКА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">КАМЕНЬ,&nbsp;НОЖНИЦЫ,&nbsp;БУМАГА</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
-    
+
             <h1 class="tape__text">ГЕНЕРАТОР&nbsp;СЛУЧАЙНЫХ&nbsp;ЧИСЕЛ</h1>
             <img class="tape__img" src="img/star-tape.svg" alt="star-tape">
         </div>
@@ -87,7 +89,7 @@
 
             <section class="games__info">
                 <div class="games__block">
-                    <a href="#game-1" class="games__link">
+                    <div class="games__link" onclick="document.querySelector('#game-1').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_1">
                             <img src="img/games/game-1.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -95,8 +97,8 @@
                                 <h2 class="games-text__name">Угадай число</h2>
                             </div>
                         </div>
-                    </a>
-                    <a href="#game-4" class="games__link">
+                    </div>
+                    <div class="games__link" onclick="document.querySelector('#game-4').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_4">
                             <img src="img/games/game-4.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -104,10 +106,10 @@
                                 <h2 class="games-text__name">Камень, ножницы, <br>бумага</h2>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="games__block">
-                    <a href="#game-2" class="games__link">
+                    <div class="games__link" onclick="document.querySelector('#game-2').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_2">
                             <img src="img/games/game-2.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -115,8 +117,8 @@
                                 <h2 class="games-text__name">Простая арифметика</h2>
                             </div>
                         </div>
-                    </a>
-                    <a href="#game-5" class="games__link">
+                    </div>
+                    <div class="games__link" onclick="document.querySelector('#game-5').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_5">
                             <img src="img/games/game-5.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -124,10 +126,10 @@
                                 <h2 class="games-text__name">Простая викторина</h2>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="games__block">
-                    <a href="#game-3" class="games__link">
+                    <div class="games__link" onclick="document.querySelector('#game-3').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_3">
                             <img src="img/games/game-3.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -135,8 +137,8 @@
                                 <h2 class="games-text__name">Переверни текст</h2>
                             </div>
                         </div>
-                    </a>
-                    <a href="#game-6" class="games__link">
+                    </div>
+                    <div class="games__link" onclick="document.querySelector('#game-6').scrollIntoView({ behavior: 'smooth'})">
                         <div class="games__icon games__icon_6">
                             <img src="img/games/game-6.jpg" alt="g-icon" class="games__img">
                             <div class="games-text">
@@ -144,7 +146,7 @@
                                 <h2 class="games-text__name">Генератор случайных цветов</h2>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
         </div>
