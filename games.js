@@ -91,7 +91,7 @@ function gameQuiz() {
     let correctAnswer = 0;
 
     for (let i = 0; i < quiz.length; i++) {
-        let answerQuestion = Number(prompt(`Введите номер верного ответа на следующиq вопрос: \n${quiz[i].question}\n${quiz[i].options.join(' ')}`));
+        let answerQuestion = Number(prompt(`Введите номер верного ответа на следующий вопрос: \n${quiz[i].question}\n${quiz[i].options.join(' ')}`));
         if (answerQuestion == quiz[i]['correctAnswer']) {
             correctAnswer++;
         }
