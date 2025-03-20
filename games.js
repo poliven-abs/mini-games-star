@@ -4,8 +4,9 @@ function gameRandom() {
     let userAnswer = Number(prompt('Введите число от 1 до 100'));
 
     while (userAnswer !== numRandom) {
-
-        if (userAnswer < numRandom) {
+        if (userAnswer == 0) {
+            break;
+        } else if (userAnswer < numRandom) {
             alert('Твоё число меньше загаданного! Попробуй ещё раз.');
             userAnswer = Number(prompt('Введите число снова:'));
         } else if (userAnswer > numRandom) {
@@ -92,12 +93,17 @@ function gameQuiz() {
 
     for (let i = 0; i < quiz.length; i++) {
         let answerQuestion = Number(prompt(`Введите номер верного ответа на следующий вопрос: \n${quiz[i].question}\n${quiz[i].options.join(' ')}`));
+
         if (answerQuestion == quiz[i]['correctAnswer']) {
             correctAnswer++;
         }
+        if (answerQuestion == 0) {
+            break;
+        }
     }
-
-    alert(`Количество ваших правильных ответов: ${correctAnswer}`);
+    if (correctAnswer !== 0) {
+        alert(`Количество ваших правильных ответов: ${correctAnswer}`); 
+    }
 }
 
 function gameRSP() {
