@@ -102,7 +102,7 @@ function gameQuiz() {
         }
     }
     if (correctAnswer !== 0) {
-        alert(`Количество ваших правильных ответов: ${correctAnswer}`); 
+        alert(`Количество ваших правильных ответов: ${correctAnswer}`);
     }
 }
 
